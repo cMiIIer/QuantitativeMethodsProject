@@ -99,7 +99,7 @@ m3<- glmmTMB(TFTotalMass~Chl.a.concentration+denI+Treatment+Temp+
              data = final_system_data)
 
 x<- psem(m1, m2, m3, data=final_system_data)
-write.csv(final_system_data, file="../Spring 2025/Quantitatvie Methods/SystemData_4-21-2025_Miller")
+#write.csv(final_system_data, file="../Spring 2025/Quantitatvie Methods/SystemData_4-21-2025_Miller")
 
 
 summary(x) # the summary function with pSEM doesn't always work: internal package issue per
