@@ -15,14 +15,14 @@ analysis phase.
 # Result Replication
 
 Results replication can be done within the code provided, and results
-are not dependent on any per mutational analysis so model outputs should
+are not dependent on any permutational analysis so model outputs should
 be consistent.
 
 ## Code Base Structure and Dependencies
 
 There are multiple iterations of data analysis. Relevant code is found
-in the ‘Code’ folder. I am working with BOTH the SICB and
-TimeToEventAnalysis projects, to help separate analysis types.
+in the ‘Code’ folder. I am working with BOTH the SEMModeling and
+AdvancedTimeToEventAnalysis projects, to help separate analysis types.
 
 I am working with multiple packages and all packages are loaded via name
 in the respective project and are also referenced here. You will need
@@ -36,7 +36,7 @@ code is provided here:
 
 ## Data Strcuture
 
-The code structure uses the read\_excel function and referencing as data
+The code structure uses the read\_excel and read.csv functions and referencing as data
 is stored in excel files as opposed to CSV format. The scripts include
 necessary corrections for erroneous data, NA values and transformations,
 so please run every line in each data loading and cleanup sections.
@@ -44,9 +44,7 @@ so please run every line in each data loading and cleanup sections.
 Note there are some discrepancies within the names of data columns:
 primarily that tadpole weight is reflective of mass, not actual weight.
 
-Data can be loaded through the following working directory:
-
-    setwd("Thesis/Data/Grad_3-14-25_Miller")
+Data can be loaded thorugh the projet file.
 
 There are also large changes to data formats, so please run every line
 *sequentially* so analyses are working as intended.
